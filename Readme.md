@@ -54,26 +54,29 @@ An application architecture needs to be composed of multiple layers. Each layer 
 It is an optional feature. According to this, servers can also provide executable code to the client. The examples of code on demand may include the compiled components such as Java applets and client-side scripts such as JavaScript.
 ### REST url examples 
 
-List of magazines:
-**GET /api/v1/magazines.json HTTP/1.1**
+**List of magazines**
 
-**Host: www.example.gov.au**
+GET /api/v1/magazines.json HTTP/1.1
 
-**Accept: application/json, text/javascript**
+Host: www.example.gov.au
 
-Filtering and sorting are server-side operations on resources:
-**GET /api/v1/magazines.json?year=2011&sort=desc HTTP/1.1**
+Accept: application/json, text/javascript
 
-**Host: www.example.gov.au**
+**Filtering and sorting are server-side operations on resources**
 
-**Accept: application/json, text/javascript**
+GET /api/v1/magazines.json?year=2011&sort=desc HTTP/1.1
 
-A single magazine in JSON format:
-**GET /api/v1/magazines/1234.json HTTP/1.1**
+Host: www.example.gov.au
 
-**Host: www.example.gov.au**
+Accept: application/json, text/javascript
 
-**Accept: application/json, text/javascript**
+**A single magazine in JSON format**
+
+GET /api/v1/magazines/1234.json HTTP/1.1
+
+Host: www.example.gov.au
+
+Accept: application/json, text/javascript
 
 ## conclusion
 It is important to create REST API according to industry standards which result in ease of development and increase client adoption.
