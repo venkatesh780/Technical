@@ -52,10 +52,14 @@ In this uniform interface, there are three elements that are important.
 An application architecture needs to be composed of multiple layers. Each layer doesn't know anything about any layer other than that of the immediate layer and there can be a lot of intermediate servers between the client and the end server. Intermediary servers may improve system availability by enabling load-balancing and by providing shared caches.
 ### Code on Demand
 It is an optional feature. According to this, servers can also provide executable code to the client. The examples of code on demand may include the compiled components such as Java applets and client-side scripts such as JavaScript.
-To know more about REST constrains[click here](https://www.geeksforgeeks.org/rest-api-architectural-constraints/)
 ## conclusion
 It is important to create REST API according to industry standards which result in ease of development and increase client adoption.
+## References
+
+Refer this link to get more understaing on REST [click here](https://www.geeksforgeeks.org/rest-api-architectural-constraints/)
+
 To know more about REST go through this link[click here](https://youtube.com/playlist?list=PLWPirh4EWFpGRdVZcQCzeTXFBNSTDAdQX)
+
 
 
 
