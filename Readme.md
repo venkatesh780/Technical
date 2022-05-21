@@ -52,6 +52,29 @@ In this uniform interface, there are three elements that are important.
 An application architecture needs to be composed of multiple layers. Each layer doesn't know anything about any layer other than that of the immediate layer and there can be a lot of intermediate servers between the client and the end server. Intermediary servers may improve system availability by enabling load-balancing and by providing shared caches.
 ### Code on Demand
 It is an optional feature. According to this, servers can also provide executable code to the client. The examples of code on demand may include the compiled components such as Java applets and client-side scripts such as JavaScript.
+### REST url examples 
+
+List of magazines:
+**GET /api/v1/magazines.json HTTP/1.1**
+
+**Host: www.example.gov.au**
+
+**Accept: application/json, text/javascript**
+
+Filtering and sorting are server-side operations on resources:
+**GET /api/v1/magazines.json?year=2011&sort=desc HTTP/1.1**
+
+**Host: www.example.gov.au**
+
+**Accept: application/json, text/javascript**
+
+A single magazine in JSON format:
+**GET /api/v1/magazines/1234.json HTTP/1.1**
+
+**Host: www.example.gov.au**
+
+**Accept: application/json, text/javascript**
+
 ## conclusion
 It is important to create REST API according to industry standards which result in ease of development and increase client adoption.
 ## References
